@@ -39,6 +39,8 @@ $result = mysqli_query(IDB::conn(),$sql) or die(trigger_error(mysqli_error(IDB::
 
 
 
+
+
 # check variable of item passed in - if invalid data, forcibly redirect back to demo_list.php page
 
 if(mysqli_num_rows($result) > 0){
@@ -77,19 +79,11 @@ get_header(); #defaults to theme header or header_inc.php
     echo '</table>';
 
 
-/*
-<?php
 
-if($mySurvey->isValid)
-{ #check to see if we have a valid SurveyID
-	echo '<p>' . $mySurvey->Description . '</p>';
-	echo $mySurvey->showQuestions();
-}else{//no such survey!
-    //echo '<div align="center">What! No such survey? There must be a mistake!!</div>';
-    header('Location: ' . VIRTUAL_PATH . 'surveys/index.php');
-}
-*/
 get_footer(); #defaults to theme footer or footer_inc.php
+}
+else{//no subcategory!
+    header('Location: ' . VIRTUAL_PATH . 'news/index.php');
 }
 
 
