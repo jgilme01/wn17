@@ -1,7 +1,14 @@
 <?php
 /**
- 
- * @author JGilmer
+ * @package News
+ * desc: List page
+ * @author J Gilmer
+ * @3.4.17
+ * @see news_view.php in "news" directory
+ *
+ * Inde page of Database to RSS project for Seattle Central ITC 250
+ *
+ * @license PHP License, version 3.01
  * @see config_inc.php  
  * @see header_inc.php
  * @see footer_inc.php 

@@ -1,9 +1,18 @@
 <?php
 /**
  * @package News
+ * desc: Sub list page
  * @author J Gilmer
  * @3.4.17
  * @see index.php in "news" directory
+ *
+ * Sub category list page for an RSS news feed project Seattle Central * ITC 250
+ *
+ * @license PHP License, version 3.01
+ * @see config_inc.php  
+ * @see header_inc.php
+ * @see footer_inc.php 
+ * @todo none
  */
  
 require '../inc_0700/config_inc.php'; #provides configuration, pathing, error handling, db credentials
